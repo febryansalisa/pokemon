@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap'); 
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+}
+
+h2{
+  font-size: 75px;
+  width: 20%;
+}
+
+ul{
+  margin: 10px;
+  color: pink;
+  background-color: black;
+  width: 90%;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+li{
+  margin: 10px;
+  padding: 4px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  
+}
+
+.container .card{
+  position: relative;
+  width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+              inset -5px -5px -5px rgba(255, 255, 255, 0.5),
+              5px 5px 5px rgba(0, 0, 0, 0.05),
+              -5px -5px -5px rgba(255, 255, 255, 0.5);
+              border-radius: 15px;
+              margin: 30px;
+}
+
+#card{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container .card .box{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: linear-gradient(#2193b0 ,#6dd5ed);
+  box-shadow: 0 10px 20px #516395;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-delay: 1s;
+  transition-duration: 0.5s;
+}
+
+.container .card .box:hover{
+  top: 5px;
+  bottom: 40px;
+}
+
+.container .card .box .content{
+  padding: 20px;
+}
+
+.container .card .box .content h1{
+  font-size: 12px;
+  margin: 10px;
+  text-align: center;
+}
+
+.container .card .box .content img{
+  width: 100px;
+  margin: 8px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .card .box .content p{
+  font-size: 10px;
+  margin: 8px;
+}
+
+.container .card .box .content .price{
+  text-decoration: underline;
+  margin: 8px;
+}
+
